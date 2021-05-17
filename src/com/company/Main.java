@@ -1,8 +1,6 @@
 package com.company;
 
-
 public class Main {
-
     public static void main(String[] args) {
         Cup cupForTea = new Cup(400, "clay", "red", "for tea", "potter",
                 "standard", "large", "on the table", "Mom", 5);
@@ -17,6 +15,6 @@ public class Main {
         Cup.printStaticDiameterOfSupport();
         Cup.printDiameterOfSupport();
 
-
+        
     }
 }
