@@ -17,37 +17,16 @@ public class Cup {
     protected int price;
 
     public Cup() {
-        volume = 250;
-        material = "glass";
-        color = "transparent";
-        type = "for water";
-        manufacturer = "robot";
-        handleShape = "standard";
-        size = "medium";
-        location = "on the table";
-        owner = "company";
-        price = 100;
     }
 
     public Cup(int volume, String material, String color, String size) {
-        this();
-        this.volume = volume;
-        this.material = material;
-        this.color = color;
-        this.size = size;
+        this(volume, material, color, null, null, null, size, null, null,0);
     }
+
     public Cup(int volume, String material, String color, String type, String manufacturer, String handleShape,
                String size, String location, String owner, int price) {
-        this.volume = volume;
-        this.material = material;
-        this.color = color;
-        this.type = type;
-        this.manufacturer = manufacturer;
-        this.handleShape = handleShape;
-        this.size = size;
-        this.location = location;
-        this.owner = owner;
-        this.price = price;
+        resetValues(volume, material, color, type, manufacturer, handleShape, size, location, owner, price);
+
     }
 
     public void resetValues(int volume, String material, String color, String type, String manufacturer,

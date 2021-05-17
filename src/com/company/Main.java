@@ -6,8 +6,9 @@ public class Main {
                 "standard", "large", "on the table", "Mom", 5);
         System.out.println(cupForTea);
 
-        Cup cup = new Cup();
-        System.out.println(cup);
+        Cup cupForSchool = new Cup(350, "plastic", "blue", "for school", "robot",
+                "standard", "medium", "in the bag", "student", 10);
+        System.out.println(cupForSchool);
 
         Cup cupForCamp = new Cup(300,"metal", "silver", "medium");
         System.out.println(cupForCamp);
@@ -15,6 +16,6 @@ public class Main {
         Cup.printStaticDiameterOfSupport();
         Cup.printDiameterOfSupport();
 
-        
+
     }
 }
