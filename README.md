@@ -40,10 +40,3 @@
 4. Enter commands:
     * **javac App.java**
     * **java App**
-
-
-
-
-
-
-
