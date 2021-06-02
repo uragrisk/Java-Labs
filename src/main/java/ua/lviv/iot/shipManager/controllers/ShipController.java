@@ -23,11 +23,11 @@ public class ShipController {
     @GetMapping("/{id}")
     public ResponseEntity getShipById(@PathVariable Integer id) {
         try {
-            Ship existingSaw = shipService.getShipById(id);
-            return ResponseEntity.ok(existingSaw);
+            Ship existingShip = shipService.getShipById(id);
+            return ResponseEntity.ok(existingShip);
         } catch (NoSuchElementException e) {
             return ResponseEntity.status(404).body(
-                    "Can't get saw with id " + id + ". Such saw doesn't exist"
+                    "Can't get ship with id " + id + ". Such ship doesn't exist"
             );
         }
     }
@@ -53,7 +53,7 @@ public class ShipController {
             return ResponseEntity.ok(shipService.updateShipById(id, ship));
         } catch (NoSuchElementException e) {
             return ResponseEntity.status(404).body(
-                    "Can't update saw with id " + id + ". Such ship doesn't exist"
+                    "Can't update ship with id " + id + ". Such ship doesn't exist"
             );
         } catch (IdProvidedWhileUpdatingException e) {
             return ResponseEntity.status(400).body(e.getMessage());
@@ -64,11 +64,11 @@ public class ShipController {
     @DeleteMapping(path = "{id}")
     public ResponseEntity<Object> deleteShipById(@PathVariable Integer id) {
         try {
-            Ship existingSaw = shipService.getShipById(id);
+            Ship existingShip = shipService.getShipById(id);
             return ResponseEntity.ok(shipService.deleteShipById(id));
         } catch (NoSuchElementException e) {
             return ResponseEntity.status(404).body(
-                    "Can't delete saw with id " + id + ". Such saw doesn't exist"
+                    "Can't delete ship with id " + id + ". Such ship doesn't exist"
             );
         }
 

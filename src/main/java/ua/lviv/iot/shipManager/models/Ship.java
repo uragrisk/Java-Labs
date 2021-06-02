@@ -20,7 +20,6 @@ public class Ship {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Integer id;
 
     private Double tonnage;

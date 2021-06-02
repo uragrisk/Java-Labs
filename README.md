@@ -1,29 +1,25 @@
-# Java-Lab9
+# Java-Lab 10
 
 
 ## Task:
-        Дана лабораторна робота присвячена розробці першого рест-сервісу з використанням мови Java
-        1. Задачею 9 лабораторної є створити REST сервіс для одного з класів, створених у лабораторній роботі 3 
-        (наприклад для класу Aligator з прикладу в лабораторній роботі 8  - AligatorController),  в котрому реалізовані 
-        CRUD-операції (Get/Post/Put/Delete) над ресурсом (наприклад над ресурсом Aligator) та операція повернення всіх 
-        об'єктів.
-        2.Операція get має використовувати id в url-запиту: /aligator/20
-        3. Операція get без id в url-запиту має повертати список всіх наявних об'єктів
-        4. Для реалізації  REST сервісу базовий клас з 8-ї лабораторної слід розширити полем id (типу Integer), 
-        та добавити set/get методи
-        5. Також код слід перевірити з-за допомогою Findbugs/checkstyle/pmd плагінів
-        6. Код слід залити окремим пул реквестом відносно коду 8-ї лабораторної
-        7. Код контролера та класу RestApplication слід помістити в окремих пакетах
-        8. Збереження об'єктів класу Алігатор слід виконувати в об'єкті типу  Map
-        Дана лабораторна передбачає зміну існуючого pom.xml файлу шляхом додавання в `нього необхідних залежностей
+        Реалізувати збереження об'єкту одного з класів з лабораторної роботи №8 в таблиці в базі даних, використовуючи Spring boot та Spring data
+
+            * Код 9ї лабораторної має бути зміненим таким чином, щоб збереження і зчитування даних відбувалось з використанням бази даних
+            * Код має відповідати code convention
+            * Код слід перевірити плагінами FindBugs, PMD і Checkstyle, та виправити помилки
+            * Код має бути залито в репозиторій як окремий pull request (а не в окрему папку чи окремий репозиторій)
+            * Код має містити окремий клас *Controller, *Service та інтерфейс *Repository
+            * Налаштування доступу до бази даних має бути реалізоване через проперті файл
+
 
 
 
 
 ## How to run:
 1. Open a command line
-2. Download the files to the desired folder using the command: **git clone https://github.com/uragrisk/Java-Labs.git**
-3. With the command cd <*path to downloaded project*> go to main directory of project
+2. Download the files to the desired folder using the command: **git clone https://github.com/uragrisk/Java-Labs.git**3.
+3. Create MySQL database named `ship-manager`
+3. With the command in command line cd <*path to downloaded project*> go to main directory of project
 4. And enter command to run application:
     * **mvnw spring-boot:run**
 5. Open http://localhost:8080/swagger-ui.html in your browser
