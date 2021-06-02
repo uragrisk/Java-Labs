@@ -19,11 +19,10 @@
 
 
 
-
 ## How to run:
 1. Open a command line
 2. Download the files to the desired folder using the command: **git clone https://github.com/uragrisk/Java-Labs.git**
 3. With the command cd <*path to downloaded project*> go to main directory of project
 4. And enter command to run application:
     * **mvnw spring-boot:run**
-5. Open http://localhost:8080/swagger-ui.html in your browser
+
