@@ -12,7 +12,7 @@ import ua.lviv.iot.enums.SurfaceType;
 @NoArgsConstructor
 @ToString(callSuper = true)
 public class Ferry extends Ship {
-    public int maxNumberOfCars;
+    private int maxNumberOfCars;
 
     public Ferry(
             final Double tonnage, final int maxSpeed, final Double fuelPer100Miles, final SurfaceType surfaceType,

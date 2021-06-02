@@ -12,8 +12,8 @@ import ua.lviv.iot.enums.SurfaceType;
 @AllArgsConstructor
 @ToString
 public class Hovercraft extends Ship {
-    public Double volumeOfAir;
-    public SurfaceType additionalSurface;
+    private Double volumeOfAir;
+    private SurfaceType additionalSurface;
 
     public Hovercraft(
             final Double tonnage, final int maxSpeed, final Double fuelPer100Miles, final SurfaceType surfaceType,

@@ -13,9 +13,9 @@ import ua.lviv.iot.enums.WingsTypes;
 @NoArgsConstructor
 @ToString(callSuper = true)
 public class HydrofoilShip extends Ship{
-    public Double wingsLength;
-    public WingsTypes wingsType;
-    public Double maxHighAboveWater;
+    private Double wingsLength;
+    private WingsTypes wingsType;
+    private Double maxHighAboveWater;
 
     public HydrofoilShip(
             final Double tonnage, final int maxSpeed, final Double fuelPer100Miles, final SurfaceType surfaceType,

@@ -10,9 +10,9 @@ import ua.lviv.iot.enums.SurfaceType;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Ship {
-    public Double tonnage;
-    public int maxSpeed;
-    public Double fluePer100Miles;
-    public SurfaceType movementSurface;
-    public MovementType movementType;
+    private Double tonnage;
+    private int maxSpeed;
+    private Double fluePer100Miles;
+    private SurfaceType movementSurface;
+    private MovementType movementType;
 }
