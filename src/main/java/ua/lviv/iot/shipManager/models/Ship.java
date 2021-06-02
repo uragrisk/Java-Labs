@@ -7,12 +7,19 @@ import lombok.NoArgsConstructor;
 import ua.lviv.iot.shipManager.enums.MovementType;
 import ua.lviv.iot.shipManager.enums.SurfaceType;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class Ship {
 
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private Double tonnage;
